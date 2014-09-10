@@ -1,4 +1,4 @@
-# Sorting Algorithms to Test
+# [Sorting Algorithms](http://en.wikipedia.org/wiki/Sorting_algorithm) to Test
 
 - [Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
 - [Buble Sort](http://en.wikipedia.org/wiki/Bubble_sort)
