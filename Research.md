@@ -1,7 +1,9 @@
 # Sorting Algorithms to Test
 
-- [Insertion Sort]()
-- [Buble Sort]()
-- [Timsort]()
-- [Heap Sort]()
-- [Merge Sort]()
+- [Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
+- [Buble Sort](http://en.wikipedia.org/wiki/Bubble_sort)
+- [Timsort](http://en.wikipedia.org/wiki/Timsort)
+- [Heap Sort](http://en.wikipedia.org/wiki/Heapsort)
+- [Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
+- [Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
+
