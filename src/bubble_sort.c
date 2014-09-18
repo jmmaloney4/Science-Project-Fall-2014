@@ -19,13 +19,14 @@
 #include <stdio.h>
 #include "data.h"
 
-int* bubble_sort(int* arr, int size, comparator c) {
+int* bubble_sort(int arr[], int size, comparator c) {
     bool done = false;
     while (!done) {
         done = true;
         for (int a = 0; a < size - 1; a++) {
             // if arr[a] and arr[a + 1] are out of place, flip them
             if (!c(arr[a], arr[a + 1])) {
+                printf("arr[%i](%i) and arr[%i](%i) are out of place\n", a, arr[a], a + 1, arr[a + 1]);
                 done = false;
                 // Flip
                 int tmp = arr[a];
@@ -44,6 +45,8 @@ bool cmp(int a, int b) {
 int main() {
 
     int* a = bubble_sort(DATA_1, DATA_1_SIZE, cmp);
-    
+
+    printf("Hello\n");
+
     print_data(a, DATA_1_SIZE);
 }
