@@ -1,0 +1,11 @@
+**/DerivedData/
+**/*.xcodeproj/
+**/*.xcworkspace/
+**/Debug/
+**/*.build/
+
+**/CMakeCache.txt
+**/CMakeFiles/
+**/Makefile
+**/*.cmake
+**/CMakeScripts/
