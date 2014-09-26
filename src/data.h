@@ -30,7 +30,9 @@ enum cmp_ret {
     CMP_RET_B_GREATER_A
 }
 
-typedef enum cmp_ret (*comparator)(int a, int b);
+typedef enum cmp_ret (*comparator_t)(int a, int b);
+
+cmp_ret std_cmp(int a, int b);
 
 void print_data(int* data, int size) {
     printf("[");
