@@ -20,3 +20,8 @@
   6. Analyze Data
   7. Present Results
 
+# Algorithms
+
+### Insetion Sort
+  
+Insertion Sort takes 
