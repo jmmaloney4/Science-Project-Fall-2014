@@ -28,4 +28,18 @@
 
 #include "data.h"
 
-int data1[] = {1,4,-3,9,8,7};
+data insertion_sort(data d) {
+    int* td = malloc(sizeof(int) * d->size);
+    memcpy(td, d->data, d->size);
+    data rv = CreateData(d->size, td);
+    for (int a = 0; a < d->size; a++) {
+        int c = d->data[a];
+        for (int k = (a - 1); k > 0; k--) {
+            if (d->data[k] < c) {
+                for (int i = a; i > k; i--) {
+
+                }
+            }
+        }
+    }
+}

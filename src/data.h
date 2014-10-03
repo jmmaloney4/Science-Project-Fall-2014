@@ -52,7 +52,7 @@ typedef data (*sort_alg_t)(data);
 data CreateData(int size, int data[]);
 void DumpData(data d);
 
-#define data1_size 100
+#define data1_size 6
 int data1[data1_size];
 
 data merge_sort(data d);
