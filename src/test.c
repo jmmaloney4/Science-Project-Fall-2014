@@ -26,35 +26,11 @@
 
  ---------------------------------------------------------------------------- */
 
-#ifndef _data_h
-#define _data_h
-
 #include <stdio.h>
-#include <stdlib.h>
+#include "data.h"
 
-#define assert(k) \
-if (!( k )) { \
-    printf("Assertion Failed on Line %i\n", __LINE__); \
-    exit(1); \
+int main() {
+    data d = CreateData(data1_size, data1);
+    data r = merge_sort(d);
+    DumpData(r);
 }
-
-#define alloc malloc
-
-struct _data {
-    int size;
-    int* data;
-};
-
-typedef struct _data* data;
-
-typedef data (*sort_alg_t)(data);
-
-data CreateData(int size, int data[]);
-void DumpData(data d);
-
-#define data1_size 100
-int data1[data1_size];
-
-data merge_sort(data d);
-
-#endif

@@ -1,3 +1,3 @@
-add_executable(bubble_sort data.h bubble_sort.c)
-# add_executable(_sort data.h _sort.c)
+add_executable(datagen datagen.c)
+add_executable(tests data.h util.c test.c data.c merge_sort.c)
 
