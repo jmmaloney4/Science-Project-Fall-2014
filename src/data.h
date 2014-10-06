@@ -38,8 +38,6 @@ if (!( k )) { \
     exit(1); \
 }
 
-#define alloc malloc
-
 struct _data {
     int size;
     int* data;
@@ -56,5 +54,15 @@ void DumpData(data d);
 int data1[data1_size];
 
 data merge_sort(data d);
+
+void* alloc(size_t s);
+
+struct testret {
+    long time;
+    long memalloc;
+    data rv;
+}
+
+struct testret* test(sort_alg_t alg, data d);
 
 #endif
