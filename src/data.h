@@ -31,6 +31,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 #define assert(k) \
 if (!( k )) { \
@@ -50,18 +51,21 @@ typedef data (*sort_alg_t)(data);
 data CreateData(int size, int data[]);
 void DumpData(data d);
 
-#define data1_size 6
+#define data1_size 39
 int data1[data1_size];
 
 data merge_sort(data d);
+data bubble_sort(data d);
 
 void* alloc(size_t s);
+void resetab();
+size_t getab();
 
 struct testret {
     long time;
-    long memalloc;
+    size_t memalloc;
     data rv;
-}
+};
 
 struct testret* test(sort_alg_t alg, data d);
 

@@ -27,5 +27,33 @@
  ---------------------------------------------------------------------------- */
 
 #include "data.h"
+#include <time.h>
 
-int data1[] = {1,4,-3,9,8,7};
+int data1[] = {1,4,-3,9,8,7,0,1,4,2,5,7,2,5,9,3,1,5,6,2,22,2,5,237572575,71,5,7245,72,145,257,245,74,74,5724,57,15,524,62,14212};
+
+size_t alloced = 0;
+
+void* alloc(size_t s) {
+    alloced += s;
+    return malloc(s);
+}
+
+void resetab() {
+    alloced = 0;
+}
+
+size_t getab() {
+    return alloced;
+}
+
+struct testret* test(sort_alg_t alg, data d) {
+    resetab();
+    struct testret* rv = malloc(sizeof(struct testret));
+    time_t start = time(NULL);
+    rv->rv = alg(d);
+    time_t end = time(NULL);
+    rv->time = end - start;
+    rv->memalloc = getab();
+    resetab();
+    return rv;
+}
