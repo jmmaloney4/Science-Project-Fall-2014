@@ -61,7 +61,7 @@ struct testret {
     long time;
     long memalloc;
     data rv;
-}
+};
 
 struct testret* test(sort_alg_t alg, data d);
 

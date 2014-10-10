@@ -53,11 +53,6 @@ data merge_sort(data d) {
         rhd->data[a] = d->data[a + lhsz];
     }
 
-    // printf("lhd: ");
-    // DumpData(lhd);
-    // printf("rhd: ");
-    // DumpData(rhd);
-
     data lhr = merge_sort(lhd);
     data rhr = merge_sort(rhd);
 
@@ -85,12 +80,10 @@ data merge_sort(data d) {
         }
         else {
             // Error
-            printf("Weird: %i\n", __LINE__);
+            assert(0 == 1);
             abort();
         }
     }
-
-    // DumpData(rv);
 
     return rv;
 }
