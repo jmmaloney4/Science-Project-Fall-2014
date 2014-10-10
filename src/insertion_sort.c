@@ -27,13 +27,17 @@
  ---------------------------------------------------------------------------- */
 
 #include "data.h"
+#include <stdlib.h>
 
 data insertion_sort(data d) {
-    int* td = malloc(sizeof(int) * d->size);
+    int* td = alloc(sizeof(int) * d->size);
     memcpy(td, d->data, d->size);
     data rv = CreateData(d->size, td);
 
     for (int a = 0; a < d->size; a++) {
-
+        int v = d->data[a];
+        for (int k = 0; k < (d->size - a); a++) {
+            
+        }
     }
 }
