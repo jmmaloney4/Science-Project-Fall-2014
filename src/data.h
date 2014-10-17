@@ -57,6 +57,7 @@ int data1[data1_size];
 data merge_sort(data d);
 data bubble_sort(data d);
 data insertion_sort(data d);
+data quick_sort(data d);
 
 void* alloc(size_t s);
 void resetab();

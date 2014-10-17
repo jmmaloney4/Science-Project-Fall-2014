@@ -43,12 +43,12 @@ data merge_sort(data d) {
 
     assert(lhsz + rhsz == d->size);
 
-    data lhd = CreateData(lhsz, alloc(sizeof(int) * lhsz));
+    data lhd = CreateData(lhsz, alloca(sizeof(int) * lhsz));
     for (int a = 0; a < lhsz; a++) {
         lhd->data[a] = d->data[a];
     }
 
-    data rhd = CreateData(rhsz, alloc(sizeof(int) * rhsz));
+    data rhd = CreateData(rhsz, alloca(sizeof(int) * rhsz));
     for (int a = 0; a < rhsz; a++) {
         rhd->data[a] = d->data[a + lhsz];
     }

@@ -29,7 +29,6 @@
 #include "data.h"
 #include <string.h>
 
-// {1, 3, 2, 4}
 data insertion_sort(data d) {
     for (int i = 1; i < d->size; i++) {
         int v = d->data[i];

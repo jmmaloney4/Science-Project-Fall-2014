@@ -27,27 +27,8 @@
  ---------------------------------------------------------------------------- */
 
 #include "data.h"
-#include <math.h>
+#include <time.h>
 
-typedef struct heap_node {
-    struct heap_node* rchild;
-    struct heap_node* lchild;
-    struct heap_node* parent;
-} heap_node;
-
-typedef struct heap {
-    heap_node* node;
-} heap;
-
-data heap_sort(data d) {
-    heap heap;
-    
-    for (int start = floor((d->size - 2) / 2); start >= 0; start -= 1) {
-        
-    }
-    
-}
-
-void siftDown() {
+data quick_sort(data d) {
     
 }

@@ -31,9 +31,6 @@
 
 int main() {
     data d = CreateData(data1_size, data1);
-    struct testret* r = test(insertion_sort, d);
-    DumpData(r->rv);
-    r = test(merge_sort, d);
-    DumpData(r->rv);
-    //printf("m: %lu t: %ld\n", r->memalloc, r->time);
+    data rv = quick_sort(d);
+    DumpData(rv);
 }
