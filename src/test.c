@@ -31,7 +31,7 @@
 
 int main() {
     data d = CreateData(data1_size, data1);
-    struct testret* r = test(bubble_sort, d);
+    struct testret* r = test(insertion_sort, d);
     DumpData(r->rv);
     r = test(merge_sort, d);
     DumpData(r->rv);
