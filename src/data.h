@@ -32,6 +32,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <alloca.h>
 
 #define assert(k) \
 if (!( k )) { \
@@ -54,10 +55,12 @@ void DumpData(data d);
 #define data1_size 39
 int data1[data1_size];
 
+#define data2_size 100000
+int data2[data2_size];
+
 data merge_sort(data d);
 data bubble_sort(data d);
 data insertion_sort(data d);
-data quick_sort(data d);
 
 void* alloc(size_t s);
 void resetab();

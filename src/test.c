@@ -30,7 +30,7 @@
 #include "data.h"
 
 int main() {
-    data d = CreateData(data1_size, data1);
-    data rv = quick_sort(d);
+    data d = CreateData(data2_size, data2);
+    data rv = merge_sort(d);
     DumpData(rv);
 }
