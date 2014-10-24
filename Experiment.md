@@ -18,11 +18,12 @@
 
 ### Insetion Sort
   
-Insertion Sort sorts a list by taking each element of a list and *Inserting* it into the list in the correct place. This is costlier than Merge Sort, however experimentally, it seems to be more efficent than Bubble Sort. It has a thereoretical time complexity of `O(n^2)`
+Insertion Sort sorts a list by taking each element of a list and *Inserting* it into the list in the correct place. This is costlier than Merge Sort, however experimentally, it seems to be more efficent than Bubble Sort. It has a thereoretical time complexity of O(n<sup>2</sup>).
 
 ### Bubble Sort
 
-Bubble Sort goes through the entire list, comparing adjacent elements, and swapping them if needed. 
+Bubble Sort goes through the entire list, comparing adjacent elements, and swapping them if needed. This is very inneficent, however very simple to implement. The theroretical time complexity of Bubble Sort is O(n<sup>2</sup>), but it is experimentally about 6 times slower than Insertion Sort.
 
+### Merge Sort
 
-
+Merge Sort splits the list in half, then calls itself to sort each half. 
