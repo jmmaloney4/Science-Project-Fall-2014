@@ -26,4 +26,4 @@ Bubble Sort goes through the entire list, comparing adjacent elements, and swapp
 
 ### Merge Sort
 
-Merge Sort splits the list in half, then calls itself to sort each half. 
+Merge Sort splits the list in half, then calls itself to sort each half. Then when each list is only one item, the list is sorted and it returns.
