@@ -84,6 +84,9 @@ data merge_sort(data d) {
             abort();
         }
     }
+    
+    free(lhr);
+    free(rhr);
 
     return rv;
 }
