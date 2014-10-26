@@ -28,10 +28,10 @@ Bubble Sort goes through the entire list, comparing adjacent elements, and swapp
 
 Merge Sort splits the list in half, then calls itself to sort each half. Then when each list is only one item, the list is sorted and it returns. Then it uses the fact that the first element is either the first element of the left hand list or the right hand list, and continues to combine the lists using this technique.
 
-| 2 | 5 | 1 | 7 | 3 | 0 |
+`| 2 | 5 | 1 | 7 | 3 | 0 |`
 
-| 2 | 5 | 1 |    | 7 | 3 | 0 |
+`| 2 | 5 | 1 |`   `| 7 | 3 | 0 |`
 
-| 1 | 2 | 5 |    | 0 | 3 | 7 |
+`| 1 | 2 | 5 |`    `| 0 | 3 | 7 |`
 
 Now either, 1 or 0  are the begenning of the new, sorted, list, and based on the pattern, it would be 0. For the second element we again look at the first element in each list, which are now 1 and 3. We select 1, put it in the list, and repeat this for the rest of the elements.
