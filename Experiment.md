@@ -34,4 +34,4 @@ Merge Sort splits the list in half, then calls itself to sort each half. Then wh
 
 `| 1 | 2 | 5 |`    `| 0 | 3 | 7 |`
 
-Now either, 1 or 0  are the begenning of the new, sorted, list, and based on the pattern, it would be 0. For the second element we again look at the first element in each list, which are now 1 and 3. We select 1, put it in the list, and repeat this for the rest of the elements. This gets us a thereoretical time complexity of O(n * log<sub>2</sub>(n))
+Now either, 1 or 0  are the begenning of the new, sorted, list, and based on the pattern, it would be 0. For the second element we again look at the first element in each list, which are now 1 and 3. We select 1, put it in the list, and repeat this for the rest of the elements. This gets us a thereoretical time complexity of O(n * log<sub>2</sub>(n)).
